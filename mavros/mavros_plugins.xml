@@ -32,23 +32,23 @@ Send any command via COMMAND_LONG</description>
     <description>@brief FTP plugin.
 @plugin ftp</description>
   </class>
-  <class name="geofence" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::GeofencePlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="geofence" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::GeofencePlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Geofence manipulation plugin
 @plugin geofence</description>
-  </class>
-  <class name="global_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::GlobalPositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  </class> -->
+  <!-- <class name="global_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::GlobalPositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Global position plugin.
 @plugin global_position
 
 Publishes global position. Conversion from GPS LLA to ECEF allows
 publishing local position to TF and PoseWithCovarianceStamped.</description>
-  </class>
-  <class name="home_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::HomePositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  </class> -->
+  <!-- <class name="home_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::HomePositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief home position plugin.
 @plugin home_position
 
 Publishes home position.</description>
-  </class>
+  </class> -->
   <class name="imu" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::IMUPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief IMU and attitude data publication plugin
 @plugin imu</description>
@@ -129,13 +129,13 @@ Required by all plugins.</description>
     <description>@brief System time plugin
 @plugin sys_time</description>
   </class>
-  <class name="waypoint" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::WaypointPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="waypoint" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::WaypointPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Mission manupulation plugin
 @plugin waypoint</description>
   </class>
   <class name="wind_estimation" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::WindEstimationPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Wind estimation plugin.
 @plugin wind_estimation</description>
-  </class>
+  </class> -->
 </library>
 <!-- [[[end]]] (checksum: e47485a8565112ddf4058c7a77bcc519) -->

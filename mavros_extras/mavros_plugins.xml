@@ -5,7 +5,7 @@ import mavros_cog
 mavros_cog.outl_plugins_xml('src/plugins', 'mavros_extras_plugins')
 ]]] -->
 <library path="mavros_extras_plugins">
-  <class name="adsb" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::ADSBPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="adsb" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::ADSBPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief ADS-B Vehicle plugin
 @plugin adsb
 
@@ -196,7 +196,7 @@ This plugin allows publishing rangefinder sensor data from Ardupilot FCU to ROS.
 @plugin terrain
 
 This plugin allows publishing of terrain height estimate from FCU to ROS.</description>
-  </class>
+  </class> -->
   <class name="trajectory" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::TrajectoryPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Trajectory plugin to receive planned path from the FCU and
 send back to the FCU a corrected path (collision free, smoothed)
@@ -204,7 +204,7 @@ send back to the FCU a corrected path (collision free, smoothed)
 
 @see trajectory_cb()</description>
   </class>
-  <class name="tunnel" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::TunnelPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="tunnel" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::TunnelPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Tunnel plugin
 @plugin tunnel</description>
   </class>
@@ -217,7 +217,7 @@ send back to the FCU a corrected path (collision free, smoothed)
 @plugin vibration
 
 This plugin is intended to publish MAV vibration levels and accelerometer clipping from FCU.</description>
-  </class>
+  </class>  -->
   <class name="vision_pose" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::VisionPoseEstimatePlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Vision pose estimate plugin
 @plugin vision_pose
@@ -232,12 +232,12 @@ to FCU position and attitude estimators.</description>
 Send velocity estimation from various vision estimators
 to FCU position and attitude estimators.</description>
   </class>
-  <class name="wheel_odometry" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::WheelOdometryPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="wheel_odometry" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::WheelOdometryPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Wheel odometry plugin.
 @plugin wheel_odometry
 
 This plugin allows computing and publishing wheel odometry coming from FCU wheel encoders.
 Can use either wheel's RPM or WHEEL_DISTANCE messages (the latter gives better accuracy).</description>
-  </class>
+  </class> -->
 </library>
 <!-- [[[end]]] (checksum: b45714611896c0f7cf634dc7aaf2cbd6) -->
