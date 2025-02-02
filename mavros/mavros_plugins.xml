@@ -12,7 +12,7 @@ mavros_cog.outl_plugins_xml('src/plugins', 'mavros_plugins')
 
 Example and &quot;how to&quot; for users.</description>
 </class>-->
-  <class name="actuator_control" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::ActuatorControlPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="actuator_control" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::ActuatorControlPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief ActuatorControl plugin
 @plugin actuator_control
 
@@ -21,7 +21,7 @@ Sends actuator controls to FCU controller.</description>
   <class name="altitude" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::AltitudePlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Altitude plugin.
 @plugin altitude</description>
-  </class>
+  </class> -->
   <class name="command" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::CommandPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Command plugin.
 @plugin command
@@ -31,7 +31,7 @@ Send any command via COMMAND_LONG</description>
   <class name="ftp" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::FTPPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief FTP plugin.
 @plugin ftp</description>
-  </class>
+  </class> 
   <!-- <class name="geofence" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::GeofencePlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Geofence manipulation plugin
 @plugin geofence</description>
@@ -64,7 +64,7 @@ and Odometry</description>
     <description>@brief Manual Control plugin
 @plugin manual_control</description>
   </class>
-  <class name="nav_controller_output" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::NavControllerOutputPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="nav_controller_output" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::NavControllerOutputPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief nav controller output plugin.
 @plugin nav_controller_output
 
@@ -106,19 +106,19 @@ Send setpoint positions to FCU controller.</description>
 
 Send position setpoints and publish current state (return loop).
 User can decide what set of filed needed for operation via IGNORE bits.</description>
-  </class>
+  </class> -->
   <class name="setpoint_trajectory" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::SetpointTrajectoryPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Setpoint TRAJECTORY plugin
 @plugin setpoint_trajectory
 
 Receive trajectory setpoints and send setpoint_raw setpoints along the trajectory.</description>
   </class>
-  <class name="setpoint_velocity" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::SetpointVelocityPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+  <!-- <class name="setpoint_velocity" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::SetpointVelocityPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Setpoint velocity plugin
 @plugin setpoint_velocity
 
 Send setpoint velocities to FCU controller.</description>
-  </class>
+  </class> -->
   <class name="sys_status" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::SystemStatusPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief System status plugin.
 @plugin sys_status
